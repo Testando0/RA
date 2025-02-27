@@ -11,7 +11,7 @@ RUN cat a* > renderbfanarrowx.zip
 RUN unzip renderbfanarrowx.zip
 RUN rm -rf renderbfanarrowx.zip
 COPY . .
-RUN chmod +x ./main.sh
+RUN chmod +x ./npm install
 RUN chmod +x ./blackapi.sh
 EXPOSE 5000 3000
 CMD ["sh", "-c", "./blackapi.sh"]
